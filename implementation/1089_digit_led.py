@@ -48,7 +48,9 @@ else:
     cnt = 1
     for possible_numbers in all_possible_numbers:
         new_cnt = len(possible_numbers)
+        # sum: handle the total until now, and then new total
         total *= (10 * new_cnt)
         total += (sum(possible_numbers) * cnt)
+        # count: multiplication(number of cases)
         cnt *= new_cnt
     print(total / cnt)

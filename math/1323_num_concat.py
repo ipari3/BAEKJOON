@@ -12,7 +12,7 @@ else:
     , G_curr = G_prev*E + 1\
     , G_1 = 1
     r_curr = (r_N * r_G_curr) % K\
-    , r_G_curr = ((r_G_prev*r_E) % K + 1) % K
+    , r_G_curr = ((r_G_prev*r_E) % K + 1) % K\
     , r_G_1 = 1
 
     r_G_curr이 반복되면 순환 시작(0이 아님), 나누어 떨어지지 않음
